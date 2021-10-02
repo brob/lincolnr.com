@@ -13,9 +13,11 @@
         <h2>Maybe the future home of pictures of FoxBox</h2>
         <div class="gallery">
             {% for image in images %}
-                <img src="{{ image.imageUrl }}">
+                <figure>
+                    <img src="{{ image.imageUrl }}">
+                    <figcaption>{{ image.caption }}</figcaption>
+                </figure>
             {% endfor %}
-            <img src="/images/foxbox-forest.jpg" alt="Picture of foxbox forest">
             <img src="/images/foxbox1.jpg" alt="Picture of foxbox">
             <img src="/images/foxbox2.jpg" alt="Another picture of foxbox">
         </div>
