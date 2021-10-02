@@ -1,0 +1,26 @@
+{
+  "name": "lincolnr.com",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "eleventy --serve",
+    "build": "eleventy"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/brob/lincolnr.com.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/brob/lincolnr.com/issues"
+  },
+  "homepage": "https://github.com/brob/lincolnr.com#readme",
+  "dependencies": {
+    "@11ty/eleventy": "^0.12.1",
+    "@sanity/client": "^2.19.0"
+  }
+}
