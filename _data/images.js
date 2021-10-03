@@ -10,6 +10,7 @@ module.exports = async function() {
     const query = `*[_type == "imageDoc"]{
         ...,
         "imageUrl": image.asset->url,
+        "slug": slug.current
     }`
     const images = await client.fetch(query)
     console.log(images[0].imageUrl)

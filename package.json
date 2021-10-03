@@ -21,6 +21,7 @@
   "homepage": "https://github.com/brob/lincolnr.com#readme",
   "dependencies": {
     "@11ty/eleventy": "^0.12.1",
-    "@sanity/client": "^2.19.0"
+    "@sanity/client": "^2.19.0",
+    "eleventy-plugin-sanity-image": "^0.1.1"
   }
 }

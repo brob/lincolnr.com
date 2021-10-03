@@ -1,0 +1,18 @@
+---
+layout: "base.html"
+pagination: 
+    data: images
+    size: 1
+    alias: image
+permalink: "{{ image.slug }}/index.html"
+
+---
+
+<div class="container">
+    <figure>
+        <img src="{% imageUrlFor image.image, 700 %}">
+        <figcaption>{{ image.caption }}</figcaption>
+    </figure>
+
+
+</div>

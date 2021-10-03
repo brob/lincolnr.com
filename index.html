@@ -7,7 +7,9 @@ layout: "base.html"
         <div class="gallery">
             {% for image in images %}
                 <figure>
-                    <img src="{{ image.imageUrl }}">
+                    <a href="{{image.slug}}">
+                        <img src="{% imageUrlFor image.image, 400 %}">
+                    </a>
                     <figcaption>{{ image.caption }}</figcaption>
                 </figure>
             {% endfor %}
