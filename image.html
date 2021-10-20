@@ -9,6 +9,10 @@ permalink: "{{ image.slug }}/index.html"
 ---
 
 <div class="container">
+
+    {% react 'components/GlassCounter' 'likeCount' image.count 'id' image._id %}
+
+
     <figure>
         <img src="{% imageUrlFor image.image, 700 %}">
         <figcaption>{{ image.caption }}</figcaption>
