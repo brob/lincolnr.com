@@ -12,7 +12,7 @@ permalink: "{{ image.slug }}/index.html"
 
     {% react 'components/GlassCounter' 'likeCount' image.count 'id' image._id %}
 
-
+{{image|log}}
     <figure>
         <img src="{% imageUrlFor image.image, 700 %}">
         <figcaption>{{ image.caption }}</figcaption>

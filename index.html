@@ -6,7 +6,7 @@ layout: "base.html"
             {% for image in images %}
                 <figure>
                     <a href="{{image.slug}}">
-                        <img src="{% imageUrlFor image.image, 400 %}">
+                        <img src="{% croppedUrlFor image.image 400 400 %}">
                     </a>
                     <figcaption>{{ image.caption }}</figcaption>
                 </figure>

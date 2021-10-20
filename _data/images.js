@@ -6,7 +6,11 @@ module.exports = async function() {
         _createdAt,
         _id,
         ...,
-        "imageUrl": image.asset->url,
+        "imageUrl": image.asset->{
+            url,
+            "width": metadata.dimensions.width,
+            "height": metadata.dimensions.height,
+        },
         "slug": slug.current,
         "count": coalesce(count, 0)
     }| order(_createdAt desc)`
