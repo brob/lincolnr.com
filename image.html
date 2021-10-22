@@ -5,18 +5,15 @@ pagination:
     size: 1
     alias: image
 permalink: "{{ image.slug }}/index.html"
-
 ---
 
 <div class="container">
 
-    {% react 'components/GlassCounter' 'likeCount' image.count 'id' image._id %}
+    {% react 'components/LikeCounter' 'likeCount' image.count 'id' image._id %}
 
-{{image|log}}
-    <figure>
-        <img src="{% imageUrlFor image.image, 700 %}">
+    <figure class="stack">
+        <img src="{% imageUrlFor image.image, 750 %}">
         <figcaption>{{ image.caption }}</figcaption>
     </figure>
-
 
 </div>

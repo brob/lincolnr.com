@@ -1,10 +1,16 @@
 * {
     box-sizing: border-box;
 }
+.stack > *+* {
+    margin-top: 1em;
+}
 .container {
     max-width: 120ch;
     width: 98vw;
     margin: auto;
+}
+figure {
+    margin: 0;
 }
 .gallery {
     display: grid;

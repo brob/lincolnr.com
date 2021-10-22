@@ -1,11 +1,8 @@
-// _includes/components/GlassCounter.jsx
 import React, { useEffect, useState } from 'react'
 
-function GlassCounter({likeCount, id}) {
-  // Declare a new state variable, which we'll call "count"
+function LikeCounter({likeCount, id}) {
   const [count, setCount] = useState(likeCount)
   useEffect(() => {
-
     fetch('/.netlify/functions/getLikes', {
         method: 'POST',
         headers: {
@@ -38,9 +35,11 @@ function GlassCounter({likeCount, id}) {
 
   return (
     <div>
-      <p>This photo has {count} likes ❤️ <button onClick={handleClick}>Add a like</button></p>   
+      <p>This photo has {count} likes ❤️ 
+        <button onClick={handleClick}>Add a like</button>
+      </p>   
     </div>
   )
 }
 
-export default GlassCounter
+export default LikeCounter
