@@ -35,8 +35,8 @@ function LikeCounter({likeCount, id}) {
 
   return (
     <div>
-      <p>This photo has {count} likes ❤️ 
-        <button onClick={handleClick}>Add a like</button>
+      <p>This photo has {count} likes  
+        <button style={{marginInline: "var(--size-1)"}} className="button" onClick={handleClick}>❤️ Add a like</button>
       </p>   
     </div>
   )

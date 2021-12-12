@@ -7,11 +7,11 @@ pagination:
 permalink: "{{ image.slug }}/index.html"
 ---
 
-<div class="container">
+<div class="container container--small">
 
     {% react 'components/LikeCounter' 'likeCount' image.count 'id' image._id %}
 
-    <figure class="stack">
+    <figure class="stack center">
         <img src="{% imageUrlFor image.image, 750 %}">
         <figcaption>{{ image.caption }}</figcaption>
     </figure>

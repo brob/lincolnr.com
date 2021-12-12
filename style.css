@@ -1,13 +1,34 @@
 * {
     box-sizing: border-box;
 }
+html {
+    font-family: var(--font-sans);
+    font-size: var(--font-size-2);
+    font-weight: var(--font-weight-2);
+    line-height: var(--line-height-2);
+}
+h1, h2, h3, h4, h5, h6 {
+    font-family: var(--font-serif);
+    font-weight: var(--font-weight-3);
+}
+h1 {
+    font-size: var(--font-size-fluid-3)
+}
+h2 {
+    font-size: var(--font-size-fluid-2)
+}
+
 .stack > *+* {
     margin-top: 1em;
 }
 .container {
     max-width: 120ch;
     width: 90vw;
-    margin: auto;
+    margin-inline: auto;
+}
+.container--small {
+    max-inline-size: var(--size-content-3);
+
 }
 figure {
     margin: 0;
@@ -20,7 +41,7 @@ figure {
 .gallery figure {
     margin:0;
     background: #fff;
-    box-shadow: 0 0 .5rem rgba(0,0,0,.25);
+    box-shadow: var(--shadow-3);
 }
 .gallery figcaption {
     padding: .5rem;
@@ -29,4 +50,40 @@ figure {
 img {
     display: block;
     max-width: 100%;
+}
+.center {
+    margin-inline: auto;
+}
+.hero {
+    background-image: var(--gradient-10);
+    /* border-radius: var(--radius-blob-5); */
+
+    padding: var(--size-10) var(--size-3)
+}
+.hero--small {
+    padding: var(--size-3) var(--size-1);
+}
+.hero__message {
+
+}
+.button {
+    display: inline-flex;
+    white-space: nowrap;
+    
+    font-size: var(--font-size-fluid-0);
+    font-weight: var(--font-weight-4);
+    
+    padding-inline: var(--size-3);
+    padding-block: var(--size-2);
+    
+    color: var(--blue-9);
+    border: var(--border-size-2) solid var(--blue-5);
+    background-color: transparent;
+    border-radius: var(--radius-2);
+        
+}
+.button:hover {
+    cursor: pointer;
+    color: var(--blue-0);
+    background-color: var(--blue-5);
 }

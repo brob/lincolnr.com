@@ -4,15 +4,21 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=L, initial-scale=1.0">
+    <link rel="stylesheet" href="https://unpkg.com/open-props"/>
+
     <link rel="stylesheet" href="/style.css">
     <title>Lincoln R dot com</title>
 </head>
 <body>
-    <div class="container">
+    <div class="stack">
+        <section class="hero {% if page.inputPath != "./index.html" %}hero--small{% endif %}">
+            <div class="hero__message container">
         <h1><a href="/">This is the homepage of Lincolnr.</a></h1>
         <h2>Maybe the future home of pictures of FoxBox</h2>
     </div>
+    </section>
 {{ content }}
+</div>
 
 
 </body>
