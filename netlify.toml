@@ -4,5 +4,5 @@ command = "npm run build"
 
 [[redirects]]
     from = "/cherries"
-    to = "/games/cherries"
+    to = "/games/yummy-cherries"
     status = 301
